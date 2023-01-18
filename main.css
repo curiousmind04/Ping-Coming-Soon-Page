@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  min-height: 75rem;
+  min-height: 80rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,6 +82,8 @@ form input::placeholder {
   color: #fff;
   border: none;
   font-weight: 600;
+  box-shadow: -5px 5px 15px rgb(224, 223, 223), 5px 5px 15px rgb(224, 223, 223);
+  cursor: pointer;
 }
 
 .button:hover {
@@ -95,14 +97,6 @@ form span {
   font-size: 1rem;
   font-weight: 600;
   text-align: center;
-}
-
-.invalid {
-  border: 2px solid hsl(354, 100%, 66%);
-}
-
-.invalid + span {
-  display: block;
 }
 
 .image-container {
@@ -123,9 +117,9 @@ form span {
 }
 
 .icon-container {
-  height: 60px;
-  width: 60px;
-  padding: 15px;
+  height: 3.6rem;
+  width: 3.6rem;
+  padding: 1rem;
   border: 1px solid hsl(223, 100%, 88%);
   border-radius: 50%;
 }
@@ -140,4 +134,56 @@ form span {
   font-size: 1.2rem;
   color: hsl(0, 0%, 59%);
   text-align: center;
+}
+
+@media (min-width: 38rem) {
+  .container {
+    min-height: 90rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h1 + p {
+    font-size: 1.2rem;
+  }
+  .form-container {
+    width: 60%;
+    position: relative;
+  }
+  form {
+    flex-direction: row;
+  }
+  form input,
+  .button {
+    height: 3.5rem;
+  }
+  .button {
+    width: 60%;
+    margin-left: 1rem;
+  }
+  form span {
+    position: absolute;
+    top: 4.7rem;
+    left: 1.7rem;
+    font-size: 0.8rem;
+    font-weight: 300;
+  }
+  .image-container {
+    width: 60%;
+  }
+  .icon-container:hover,
+  .icon-container:active,
+  .icon-container:hover svg {
+    fill: #fff;
+    background: hsl(223, 87%, 63%);
+    cursor: pointer;
+  }
+}
+
+.invalid {
+  border: 2px solid hsl(354, 100%, 66%);
+}
+
+.invalid + span {
+  display: block;
 }
