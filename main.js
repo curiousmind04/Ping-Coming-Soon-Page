@@ -1,6 +1,6 @@
 const button = document.querySelector(".button");
 const form = document.querySelector(".form");
-const email = document.querySelector(".email-input");
+const email = document.querySelector(".email");
 
 button.addEventListener("click", (event) => {
   event.preventDefault();
