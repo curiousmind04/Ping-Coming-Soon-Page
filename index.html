@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body id="top">
-    <div class="container">
+    <main class="container">
       <div class="logo-container">
         <img src="images/logo.svg" alt="Ping logo" />
       </div>
@@ -29,7 +29,12 @@
             class="email"
             placeholder="Your email address..."
           />
-          <span>Please provide a valid email address</span>
+          <span class="no-email"
+            >Whoops! It looks like you forgot to add your email
+          </span>
+          <span class="invalid-email-input"
+            >Please provide a valid email address
+          </span>
           <button class="button">Notify Me</button>
         </form>
       </div>
@@ -69,7 +74,7 @@
         </a>
       </div>
       <p>&copy; Copyright Ping. All rights reserved.</p>
-    </div>
+    </main>
 
     <script src="main.js"></script>
   </body>
