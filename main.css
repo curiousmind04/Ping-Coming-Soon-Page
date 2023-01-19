@@ -82,12 +82,12 @@ form input::placeholder {
   color: #fff;
   border: none;
   font-weight: 600;
-  box-shadow: -5px 5px 15px rgb(224, 223, 223), 5px 5px 15px rgb(224, 223, 223);
+  box-shadow: 0 5px 15px rgb(212, 211, 211);
   cursor: pointer;
 }
 
 .button:hover {
-  background: hsl(223, 85%, 68%);
+  opacity: 0.8;
 }
 
 form span {
@@ -188,4 +188,12 @@ form span {
 .invalid-email ~ .invalid-email-input,
 .empty-email + .no-email {
   display: block;
+}
+
+.invalid-email {
+  color: hsl(354, 100%, 66%);
+}
+
+.empty-email::placeholder {
+  color: hsl(354, 100%, 66%);
 }
