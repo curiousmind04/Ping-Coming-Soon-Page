@@ -95,9 +95,10 @@ form span {
   display: none;
   margin-bottom: 3.5rem;
   color: hsl(354, 100%, 66%);
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 600;
   text-align: center;
+  font-style: italic;
 }
 
 .image-container {
@@ -165,7 +166,7 @@ form span {
     top: 4.7rem;
     left: 1.6rem;
     font-size: 0.8rem;
-    font-weight: 300;
+    /* font-weight: 300; */
   }
   .image-container {
     width: 60%;
